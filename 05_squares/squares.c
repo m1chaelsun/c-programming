@@ -12,6 +12,7 @@ int isInRange(int coord, int offset, int size) {
   } // if coord is in range, return 1
   else { // else, return 0
     return 0;
+  }
 }
 
 /*
@@ -26,6 +27,16 @@ int isAtBorder(int coord, int offset, int size) {
   // if coord is equal to offest or offset + size
   // return 1, else return 0
     return 0;
+  }
+}
+
+int max (int num1, int num2) {
+  if (num1 > num2) { //check if num1 is greater than num2
+    return num1; //if so, your answer is num1
+  }
+  else { //otherwise, your answer is num2
+    return num2;
+  }
 }
 
 void squares(int size1, int x_offset, int y_offset, int size2) {
@@ -55,7 +66,8 @@ void squares(int size1, int x_offset, int y_offset, int size2) {
       else {
 	printf(" ");
       } //else print a space
-      printf("\n");
-    } //when you finish counting x from 0 to w, 
+    }
+    printf("\n");
+  } //when you finish counting x from 0 to w, 
     //print a newline
-  }
+}

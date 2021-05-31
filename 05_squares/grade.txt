@@ -1,0 +1,32 @@
+Grading at Mon 31 May 2021 11:05:18 AM UTC
+Trying to compile your code and link with squares_test.o
+squares.c: In function ‘isInRange’:
+squares.c:21:1: error: ISO C forbids nested functions [-Werror=pedantic]
+   21 | int isAtBorder(int coord, int offset, int size) {
+      | ^~~
+squares.c: In function ‘isAtBorder’:
+squares.c:31:1: error: ISO C forbids nested functions [-Werror=pedantic]
+   31 | void squares(int size1, int x_offset, int y_offset, int size2) {
+      | ^~~~
+squares.c: In function ‘squares’:
+squares.c:32:11: error: implicit declaration of function ‘max’ [-Werror=implicit-function-declaration]
+   32 |   int w = max (size1, (x_offset + size2)); //compute the max of size1 and (x_offset + size2).  Call this w
+      |           ^~~
+squares.c:61:3: error: expected declaration or statement at end of input
+   61 |   }
+      |   ^
+squares.c: In function ‘isAtBorder’:
+squares.c:61:3: error: expected declaration or statement at end of input
+squares.c: In function ‘isInRange’:
+squares.c:61:3: error: expected declaration or statement at end of input
+At top level:
+squares.c:21:5: error: ‘isAtBorder’ defined but not used [-Werror=unused-function]
+   21 | int isAtBorder(int coord, int offset, int size) {
+      |     ^~~~~~~~~~
+squares.c:31:6: error: ‘squares’ defined but not used [-Werror=unused-function]
+   31 | void squares(int size1, int x_offset, int y_offset, int size2) {
+      |      ^~~~~~~
+cc1: all warnings being treated as errors
+Could not compile your code
+
+Overall Grade: FAILED
